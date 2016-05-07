@@ -100,6 +100,7 @@ public class TestManagerAgent extends ExtendedAgent {
                 }
             }else {
                 doDelete();
+                return;
             }
         }
         runSingleTest(P, actualK, actualN);

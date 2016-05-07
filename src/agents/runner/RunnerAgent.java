@@ -132,6 +132,7 @@ public class RunnerAgent extends ExtendedAgent {
         message.setContent(String.valueOf(K));
         message.addReceiver(judgeAgent);
         send(message);
+
         deleteTeam();
 //        println("after doDelete");
     }
