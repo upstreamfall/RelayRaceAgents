@@ -98,22 +98,6 @@ public class RunnerAgent extends ExtendedAgent {
         doMove(newLocation);
     }
 
-    private void finishRace() {
-        if(currentContainer == 1){
-            lapCounter[getTeamNumber()]++;
-            println("team " + K + " next lap " + lapCounter[getTeamNumber()]);
-            if (lapCounter[getTeamNumber()] == N) {
-                ACLMessage message = new ACLMessage(ACLMessage.INFORM);
-                message.setConversationId("FINISH");
-                message.setContent(String.valueOf(K));
-                message.addReceiver(judgeAgent);
-                send(message);
-                deleteTeam();
-            }
-        }
-//        println("after doDelete");
-    }
-
     private void deleteTeam() {
         ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
         msg.setConversationId("DELETE");
@@ -125,13 +109,31 @@ public class RunnerAgent extends ExtendedAgent {
 
     @Override
     protected void afterMove() {
-        super.afterMove();
-        currentStep++;
-        informLocalAgent();
-        finishRace();
-//        if (currentStep == N) {
-//            finishRace();
-//        }
+        if (checkFinishRace()){
+            finishRace();
+        }else {
+            informLocalAgent();
+        }
+    }
+
+    private boolean checkFinishRace() {
+        if (currentContainer == 1){
+            lapCounter[getTeamNumber()]++;
+            println("team " + K + " next lap " + lapCounter[getTeamNumber()]);
+            return lapCounter[getTeamNumber()] == N;
+        }
+
+        return false;
+    }
+
+    private void finishRace() {
+        ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+        message.setConversationId("FINISH");
+        message.setContent(String.valueOf(K));
+        message.addReceiver(judgeAgent);
+        send(message);
+        deleteTeam();
+//        println("after doDelete");
     }
 
     private void informLocalAgent() {
