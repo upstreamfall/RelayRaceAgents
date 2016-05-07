@@ -49,7 +49,7 @@ public class TestManagerAgent extends ExtendedAgent {
 
     private void runSingleTest(int p, int k, int n) {
         try {
-            sleep(2000);
+            sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -83,7 +83,7 @@ public class TestManagerAgent extends ExtendedAgent {
     }
 
     public int getAgentsNumber() {
-        return P * actualK;
+        return (P+1) * actualK;
     }
 
     public void nextTest() {

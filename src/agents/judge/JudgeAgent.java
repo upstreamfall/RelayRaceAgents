@@ -50,8 +50,8 @@ public class JudgeAgent extends ExtendedAgent {
         ACLMessage request = new ACLMessage(ACLMessage.REQUEST);
         request.setConversationId("GET_LOCATIONS");
         for (int i = 0; i < K; i++) {
-            for (int j = 0; j < P; j++) {
-                request.addReceiver(new AID("runner_" + (i+1) + "_" + (j+1), AID.ISLOCALNAME));
+            for (int j = 0; j <= P; j++) {
+                request.addReceiver(new AID("runner_" + (i+1) + "_" + j, AID.ISLOCALNAME));
             }
         }
 
@@ -59,7 +59,7 @@ public class JudgeAgent extends ExtendedAgent {
     }
 
     public int getRunnersNumber() {
-        return P * K;
+        return (P+1) * K;
     }
 
     public int getTeamNumber(){

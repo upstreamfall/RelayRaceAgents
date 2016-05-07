@@ -66,7 +66,6 @@ public class CreatorAgent extends ExtendedAgent {
 
             if (containerNumber == 1) {
                 agentName = "runner_" + i + "_" + 0;
-                agentParams = new Object[]{P, i, N, containerNumber};
                 createRunnerAgent(agentName, agentParams);
             }
         }
