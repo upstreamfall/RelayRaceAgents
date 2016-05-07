@@ -32,15 +32,15 @@ public class GetTeamMemberLocationsBehaviour extends Behaviour {
 
         int teamNumber = ((RunnerAgent)myAgent).getTeamNumber();
         int agentNumber = ((RunnerAgent)myAgent).getAgentNumber();
-        for (int i = 0; i < teamMembers; i++) {
-//            if ((i+1) == agentNumber) continue;
-            sendRequestToAMSForMember("runner_" + teamNumber + "_" + (i+1));
-//            ((RunnerAgent) myAgent).println("ask for runner_" + teamNumber + "_" + (i+1));
+        for (int i=0; i<=teamMembers; i++) {
+            sendRequestToAMSForMember(i, "runner_" + teamNumber + "_" + i);
+//            ((RunnerAgent) myAgent).println("ask for runner_" + teamNumber + "_" + i);
         }
     }
 
-    private void sendRequestToAMSForMember(String agentName) {
+    private void sendRequestToAMSForMember(int agentNumber, String agentName) {
         ACLMessage request = new ACLMessage(ACLMessage.REQUEST);
+        request.setConversationId(String.valueOf(agentNumber));
         request.addReceiver(myAgent.getAMS());
         request.setLanguage(FIPANames.ContentLanguage.FIPA_SL0);
         request.setOntology(MobilityOntology.NAME);
@@ -76,16 +76,15 @@ public class GetTeamMemberLocationsBehaviour extends Behaviour {
                 stage=1;
                 break;
             case 1:
-                MessageTemplate messageTemplate = MessageTemplate.MatchReceiver(new AID[]{myAgent.getAMS()});
-//                ACLMessage msg = myAgent.receive(messageTemplate);
-                ACLMessage msg = myAgent.receive();
+                MessageTemplate messageTemplate = MessageTemplate.MatchSender(myAgent.getAMS());
+                ACLMessage msg = myAgent.receive(messageTemplate);
                 if(msg != null) {
-//                    ((RunnerAgent)myAgent).println("sender: " + msg.getSender());
+                    int agentNumber = Integer.parseInt(msg.getConversationId());
                     Location location = parseAMSResponse(msg);
-                    addLocation(location);
+                    addLocation(agentNumber, location);
 
                     counter++;
-                    if(counter == teamMembers) {
+                    if(counter == (teamMembers+1)) {
                         stage = 2;
                     }
                 } else {
@@ -99,8 +98,8 @@ public class GetTeamMemberLocationsBehaviour extends Behaviour {
         }
     }
 
-    private void addLocation(Location location) {
-        ((RunnerAgent)myAgent).addLocation(location);
+    private void addLocation(int agentNumber, Location location) {
+        ((RunnerAgent)myAgent).addLocation(agentNumber, location);
     }
 
     private Location parseAMSResponse(ACLMessage msg) {

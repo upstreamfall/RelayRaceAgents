@@ -17,10 +17,14 @@ import jade.wrapper.StaleProxyException;
 public class CreatorAgent extends ExtendedAgent {
     private int P, K, N;
     private int containerNumber;
+    private ContainerController containerController;
+    String agentClassName = "agents.runner.RunnerAgent";
 
     @Override
     protected void setup() {
         super.setup();
+
+        containerController = getContainerController();
 
         addBehaviour(new CyclicBehaviour() {
             @Override
@@ -47,8 +51,6 @@ public class CreatorAgent extends ExtendedAgent {
         K = params.K;
         N = params.N;
 
-        ContainerController containerController = getContainerController();
-
         try {
 //            println("starts creating agents in " + containerController.getContainerName());
 //            println(containerController.getContainerName().split("-")[1]);
@@ -57,16 +59,25 @@ public class CreatorAgent extends ExtendedAgent {
             e.printStackTrace();
         }
 
-        for (int i = 0; i < K; i++) {
-            String agentName = "runner_" + (i+1) + "_" + containerNumber;
-            String agentClassName = "agents.runner.RunnerAgent";
-            Object[] agentParams = new Object[]{P, (i+1), N, containerNumber};
-            try {
-                AgentController agent = containerController.createNewAgent(agentName, agentClassName, agentParams);
-                agent.start();
-            } catch (StaleProxyException e) {
-                e.printStackTrace();
+        for (int i=1; i<=K; i++) {
+            String agentName = "runner_" + i + "_" + containerNumber;
+            Object[] agentParams = new Object[]{P, i, N, containerNumber};
+            createRunnerAgent(agentName, agentParams);
+
+            if (containerNumber == 1) {
+                agentName = "runner_" + i + "_" + 0;
+                agentParams = new Object[]{P, i, N, containerNumber};
+                createRunnerAgent(agentName, agentParams);
             }
+        }
+    }
+
+    private void createRunnerAgent(String agentName, Object[] agentParams) {
+        try {
+            AgentController agent = containerController.createNewAgent(agentName, agentClassName, agentParams);
+            agent.start();
+        } catch (StaleProxyException e) {
+            e.printStackTrace();
         }
     }
 }

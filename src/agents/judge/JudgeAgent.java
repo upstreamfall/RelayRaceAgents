@@ -91,13 +91,12 @@ public class JudgeAgent extends ExtendedAgent {
     }
 
     private void sendMessageToRunners(String conversationId) {
-//        println("conversationId: " + conversationId);
         ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
         msg.setConversationId(conversationId);
         for (int i = 0; i < K; i++) {
-            for (int j = 0; j < P; j++) {
-                msg.addReceiver(new AID("runner_" + (i+1) + "_" + (j+1), AID.ISLOCALNAME));
-            }
+//            for (int j = 0; j < P; j++) {
+                msg.addReceiver(new AID("runner_" + (i+1) + "_" + 1, AID.ISLOCALNAME));
+//            }
         }
 
         send(msg);

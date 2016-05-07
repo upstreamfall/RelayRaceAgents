@@ -27,7 +27,7 @@ public class RunnerAgent extends ExtendedAgent {
             N = Integer.parseInt(String.valueOf(args[2]));
             currentContainer = Integer.parseInt(String.valueOf(args[3]));
 
-            type = (currentContainer == 1 ? RunnerType.RunnerAgent : RunnerType.LocalAgent);
+            type = (getAgentNumber() == 1 ? RunnerType.RunnerAgent : RunnerType.LocalAgent);
             containers = new Location[P+1];
 
 //            println(String.valueOf(type));
@@ -61,11 +61,11 @@ public class RunnerAgent extends ExtendedAgent {
         return Integer.parseInt(getLocalName().split("_")[2]);
     }
 
-    public void addLocation(Location location) {
-//        println("id: " + location.getID());
+    public void addLocation(int agentNumber, Location location) {
+//        println("agentNumber: " + agentNumber + ", id: " + location.getID());
 //        println("name: " + location.getName().split("-")[1]);
 //        println("address: " + location.getAddress());
-        containers[Integer.parseInt(location.getName().split("-")[1])] = location;
+        containers[agentNumber] = location;
     }
 
     public void confirmGettingLocations() {
@@ -83,6 +83,7 @@ public class RunnerAgent extends ExtendedAgent {
         }else {
             currentContainer += 1;
         }
+        println("next container: " + currentContainer);
         Location newLocation = containers[currentContainer];
         println("move to " + newLocation.getName());
         doMove(newLocation);
@@ -97,6 +98,7 @@ public class RunnerAgent extends ExtendedAgent {
             send(message);
         }
         doDelete();
+        println("after doDelete");
     }
 
     @Override
@@ -106,14 +108,13 @@ public class RunnerAgent extends ExtendedAgent {
         informLocalAgent();
         if (currentStep == N) {
             finishRace();
-            doDelete();
         }
     }
 
     private void informLocalAgent() {
         ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
         msg.setConversationId("NEXT_MOVE");
-        int nextAgentNumber = (getAgentNumber()+1) > P ? 1 : (getAgentNumber()+1);
+        int nextAgentNumber = (getAgentNumber()+1) > P ? 0 : (getAgentNumber()+1);
         msg.addReceiver(new AID("runner_" + getTeamNumber() + "_" + nextAgentNumber, AID.ISLOCALNAME));
 
         send(msg);
@@ -121,9 +122,8 @@ public class RunnerAgent extends ExtendedAgent {
     }
 
     public void startRace() {
-        if(currentContainer == 1) {
+        if(getAgentNumber() == 1) {
             move();
         }
     }
 }
-

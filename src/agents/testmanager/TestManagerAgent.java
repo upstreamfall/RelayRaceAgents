@@ -7,6 +7,8 @@ import jade.lang.acl.ACLMessage;
 
 import java.io.IOException;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by pawel.bielicki on 2016-05-05.
  */
@@ -46,6 +48,12 @@ public class TestManagerAgent extends ExtendedAgent {
     }
 
     private void runSingleTest(int p, int k, int n) {
+        try {
+            sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         addBehaviour(new WaitForCreateAgentsBehaviour());
         ACLMessage message = new ACLMessage(ACLMessage.REQUEST);
         message.setConversationId("PREPARE_TEST");
