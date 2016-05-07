@@ -49,7 +49,7 @@ public class TestManagerAgent extends ExtendedAgent {
 
     private void runSingleTest(int p, int k, int n) {
         try {
-            sleep(1000);
+            sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -71,6 +71,7 @@ public class TestManagerAgent extends ExtendedAgent {
     }
 
     public void startTest() {
+        println("start test: P=" + P + ", K=" + actualK + ", N=" + actualN + ", iteration=" + (testIterator+1));
         ACLMessage message = new ACLMessage(ACLMessage.REQUEST);
         message.setConversationId("START_TEST");
         message.addReceiver(new AID("j0", AID.ISLOCALNAME));

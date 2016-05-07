@@ -7,12 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec6b9b-3d29-44cb-adaa-66fa6e4bd512" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/APDescription.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/MTPs-Main-Container.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/jade_run_gui.bat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APDescription.txt" afterPath="$PROJECT_DIR$/APDescription.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RelayRaceAgents/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/RelayRaceAgents/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" afterPath="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/judge/JudgeAgent.java" afterPath="$PROJECT_DIR$/src/agents/judge/JudgeAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" afterPath="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" afterPath="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" afterPath="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" />
@@ -38,63 +38,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestManagerAgent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestManagerAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-              <folding>
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitForCreateAgentsBehaviour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/agents/testmanager/WaitForCreateAgentsBehaviour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitRunnersGetLocationsBehaviour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/agents/judge/WaitRunnersGetLocationsBehaviour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="257">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JudgeAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/agents/judge/JudgeAgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#1941#1942#0" expanded="true" />
-                <element signature="e#1973#1974#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunnerAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-              <folding>
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +51,28 @@
       <file leaf-file-name="ExtendedAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="68">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunnerAgent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaitEndRaceBehaviour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,9 +136,11 @@
         <option value="$PROJECT_DIR$/src/agents/judge/WaitRunnersGetLocationsBehaviour.java" />
         <option value="$PROJECT_DIR$/src/agents/testmanager/WaitForResultBehaviour.java" />
         <option value="$PROJECT_DIR$/src/agents/runner/GetTeamMemberLocationsBehaviour.java" />
-        <option value="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/judge/JudgeAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" />
+        <option value="$PROJECT_DIR$/src/agents/runner/LapCounters.java" />
+        <option value="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" />
+        <option value="$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java" />
         <option value="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" />
       </list>
@@ -389,14 +360,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="agents.runner" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="agents.runner" />
+      <recent name="agents" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pawel\IdeaProjects\RelayRaceAgents\src" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="agents" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.run_test_1_lap">
+  <component name="RunManager" selected="Application.run_tests_small">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -813,6 +785,66 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="run_creator_3" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;creator_3:agents.creator.CreatorAgent&quot;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelayRaceAgents" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_creator_4" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;creator_4:agents.creator.CreatorAgent&quot;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelayRaceAgents" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_creator_5" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;creator_5:agents.creator.CreatorAgent&quot;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelayRaceAgents" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_creator_6" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;creator_6:agents.creator.CreatorAgent&quot;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelayRaceAgents" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="run_tests" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="jade.Boot" />
@@ -828,11 +860,26 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="run_tests_big" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;t0:agents.testmanager.TestManagerAgent(1,2,2,2,20,2,2,10)&quot;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelayRaceAgents" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="run_tests_small" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="jade.Boot" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;t0:agents.testmanager.TestManagerAgent(2,2,1,1,1,2,1,1)&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="-container -agents &quot;t0:agents.testmanager.TestManagerAgent(1,4,1,1,1,5,1,6)&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -888,13 +935,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="6">
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="Application.run_creator_1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.run_tests" />
-      <item index="2" class="java.lang.String" itemvalue="Application.run_tests_small" />
-      <item index="3" class="java.lang.String" itemvalue="Application.run_test_1_lap" />
-      <item index="4" class="java.lang.String" itemvalue="Application.run_creator_2" />
-      <item index="5" class="java.lang.String" itemvalue="Application.run" />
+      <item index="1" class="java.lang.String" itemvalue="Application.run_creator_3" />
+      <item index="2" class="java.lang.String" itemvalue="Application.run_creator_4" />
+      <item index="3" class="java.lang.String" itemvalue="Application.run_creator_5" />
+      <item index="4" class="java.lang.String" itemvalue="Application.run_creator_6" />
+      <item index="5" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="6" class="java.lang.String" itemvalue="Application.run_tests_big" />
+      <item index="7" class="java.lang.String" itemvalue="Application.run_tests_small" />
+      <item index="8" class="java.lang.String" itemvalue="Application.run_test_1_lap" />
+      <item index="9" class="java.lang.String" itemvalue="Application.run_creator_2" />
+      <item index="10" class="java.lang.String" itemvalue="Application.run" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -919,16 +971,16 @@
       <workItem from="1462476515149" duration="7402000" />
       <workItem from="1462564819806" duration="866000" />
       <workItem from="1462614138327" duration="42000" />
-      <workItem from="1462614274048" duration="1716000" />
+      <workItem from="1462614274048" duration="6661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52582000" />
+    <option name="totallyTimeSpent" value="57527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -938,7 +990,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40156454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31812257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -956,6 +1008,33 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2804878" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24765258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31812257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2804878" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -970,7 +1049,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -979,14 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dysk Google/jade/JADE-all-4.4.0/JADE-examples-4.4.0/jade/src/examples/mobile/GetAvailableLocationsBehaviour.java" />
     <entry file="file://$USER_HOME$/Dysk Google/jade/JADE-all-4.4.0/JADE-src-4.4.0/jade/src/jade/proto/SimpleAchieveREInitiator.java" />
     <entry file="file://$USER_HOME$/Dysk Google/jade/JADE-all-4.4.0/JADE-examples-4.4.0/jade/src/examples/mobile/MobileAgent.java" />
     <entry file="file://$USER_HOME$/Dysk Google/jade/JADE-all-4.4.0/JADE-examples-4.4.0/jade/src/examples/mobile/LocationTableModel.java" />
@@ -1033,13 +1104,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/judge/WaitForRunnersToGetLocationsBehaviour.java" />
-    <entry file="file://$PROJECT_DIR$/src/agents/judge/WaitTeamsFinishRaceBehaviour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/runner/WaitForSignalToGetLocationsBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1081,7 +1145,7 @@
         <state relative-caret-position="306">
           <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1104,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/testmanager/WaitForCreateAgentsBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="229">
           <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1112,29 +1176,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/runner/LapCounters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/judge/JudgeAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
+        <state relative-caret-position="765">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#1941#1942#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/creator/CreatorAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/judge/WaitTeamsFinishRaceBehaviour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1143,23 +1236,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding>
-            <element signature="e#2564#2565#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="301">
+          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

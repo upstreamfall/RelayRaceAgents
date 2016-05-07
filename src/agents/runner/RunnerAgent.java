@@ -17,6 +17,7 @@ public class RunnerAgent extends ExtendedAgent {
     private Location[] containers;
     AID judgeAgent;
     private int currentStep;
+    public static int[] lapCounter;
 
     protected void setup() {
         _name = getLocalName();
@@ -27,6 +28,11 @@ public class RunnerAgent extends ExtendedAgent {
             K = Integer.parseInt(String.valueOf(args[1]));
             N = Integer.parseInt(String.valueOf(args[2]));
             currentContainer = Integer.parseInt(String.valueOf(args[3]));
+            int teamNumber = Integer.parseInt(String.valueOf(args[4]));
+            lapCounter = new int[teamNumber+1];
+            for (int i=0; i<=teamNumber ; i++) {
+                lapCounter[i] = 0;
+            }
             runnerNumber = getAgentNumber();
 
             currentStep = runnerNumber ==0 ? 1 : 0;
@@ -40,6 +46,7 @@ public class RunnerAgent extends ExtendedAgent {
             addBehaviour(new WaitForSignalToGetLocationsBehaviour());
             addBehaviour(new WaitNextMoveBehaviour());
             addBehaviour(new WaitStartRaceBehaviour());
+            addBehaviour(new WaitEndRaceBehaviour());
             notifyReadiness();
         }else {
             doDelete();
@@ -92,15 +99,28 @@ public class RunnerAgent extends ExtendedAgent {
     }
 
     private void finishRace() {
-        if(runnerNumber == P){
-            ACLMessage message = new ACLMessage(ACLMessage.INFORM);
-            message.setConversationId("FINISH");
-            message.setContent(String.valueOf(K));
-            message.addReceiver(judgeAgent);
-            send(message);
+        if(currentContainer == 1){
+            lapCounter[getTeamNumber()]++;
+            println("team " + K + " next lap " + lapCounter[getTeamNumber()]);
+            if (lapCounter[getTeamNumber()] == N) {
+                ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+                message.setConversationId("FINISH");
+                message.setContent(String.valueOf(K));
+                message.addReceiver(judgeAgent);
+                send(message);
+                deleteTeam();
+            }
         }
-        doDelete();
 //        println("after doDelete");
+    }
+
+    private void deleteTeam() {
+        ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+        msg.setConversationId("DELETE");
+        for (int i = 0; i <= P; i++) {
+            msg.addReceiver(new AID("runner_"+ getTeamNumber() + i, AID.ISLOCALNAME));
+        }
+        send(msg);
     }
 
     @Override
@@ -108,9 +128,10 @@ public class RunnerAgent extends ExtendedAgent {
         super.afterMove();
         currentStep++;
         informLocalAgent();
-        if (currentStep == N) {
-            finishRace();
-        }
+        finishRace();
+//        if (currentStep == N) {
+//            finishRace();
+//        }
     }
 
     private void informLocalAgent() {

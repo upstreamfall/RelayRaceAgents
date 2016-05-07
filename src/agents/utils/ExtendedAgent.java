@@ -9,11 +9,11 @@ import static java.lang.Thread.sleep;
  */
 public class ExtendedAgent extends Agent {
     public void println(String str) {
-//        try {
-//            sleep(1000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println(getLocalName() + ": " + str);
     }
 

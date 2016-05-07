@@ -61,7 +61,7 @@ public class CreatorAgent extends ExtendedAgent {
 
         for (int i=1; i<=K; i++) {
             String agentName = "runner_" + i + "_" + containerNumber;
-            Object[] agentParams = new Object[]{P, i, N, containerNumber};
+            Object[] agentParams = new Object[]{P, i, N, containerNumber, K};
             createRunnerAgent(agentName, agentParams);
 
             if (containerNumber == 1) {
