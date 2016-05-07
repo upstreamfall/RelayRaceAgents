@@ -118,7 +118,7 @@ public class RunnerAgent extends ExtendedAgent {
         ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
         msg.setConversationId("DELETE");
         for (int i = 0; i <= P; i++) {
-            msg.addReceiver(new AID("runner_"+ getTeamNumber() + i, AID.ISLOCALNAME));
+            msg.addReceiver(new AID("runner_"+ getTeamNumber() + "_" + i, AID.ISLOCALNAME));
         }
         send(msg);
     }

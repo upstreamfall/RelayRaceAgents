@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec6b9b-3d29-44cb-adaa-66fa6e4bd512" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/APDescription.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/MTPs-Main-Container.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/RelayRaceAgents_jar/scripts/jade_run_gui.bat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" afterPath="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" afterPath="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" afterPath="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" afterPath="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" />
     </list>
     <ignored path="RelayRaceAgents.iws" />
@@ -38,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestManagerAgent.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestManagerAgent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,18 +45,20 @@
       <file leaf-file-name="ExtendedAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunnerAgent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunnerAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+            <state relative-caret-position="246">
+              <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -137,12 +133,12 @@
         <option value="$PROJECT_DIR$/src/agents/testmanager/WaitForResultBehaviour.java" />
         <option value="$PROJECT_DIR$/src/agents/runner/GetTeamMemberLocationsBehaviour.java" />
         <option value="$PROJECT_DIR$/src/agents/judge/JudgeAgent.java" />
-        <option value="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/runner/LapCounters.java" />
         <option value="$PROJECT_DIR$/src/agents/creator/CreatorAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java" />
-        <option value="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" />
         <option value="$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java" />
+        <option value="$PROJECT_DIR$/src/agents/runner/RunnerAgent.java" />
+        <option value="$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java" />
       </list>
     </option>
   </component>
@@ -368,7 +364,7 @@
       <recent name="C:\Users\Pawel\IdeaProjects\RelayRaceAgents\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.run_tests_small">
+  <component name="RunManager" selected="Application.run">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -971,12 +967,12 @@
       <workItem from="1462476515149" duration="7402000" />
       <workItem from="1462564819806" duration="866000" />
       <workItem from="1462614138327" duration="42000" />
-      <workItem from="1462614274048" duration="6661000" />
+      <workItem from="1462614274048" duration="6958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57527000" />
+    <option name="totallyTimeSpent" value="57824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -990,7 +986,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31812257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31812257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1208,22 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/runner/WaitEndRaceBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1234,10 +1214,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/utils/ExtendedAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/agents/runner/RunnerAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+        <state relative-caret-position="246">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agents/testmanager/TestManagerAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
